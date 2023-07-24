@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea house</title>
+  <!--tailwind and daisyui cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!--manrope google font cdn-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!--fontawesome cdn-->
+  <script src="https://kit.fontawesome.com/6b970ed50d.js" crossorigin="anonymous"></script>
+<!--customize tailwind class-->
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          dark: '#1C1C1C',
+          lightdark: '#777',
+        }
+      }
+    }
+  }
+</script>
+  <!--some css-->
+  <style>
+    .manrope-font{
+      font-family: 'Manrope', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="manrope-font">
+  <header class="container mx-auto">
+    <!--bannar part start-->
+    <section class="mt-6">
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row ">
+         
+          <div>
+            <h1 class=" text-3xl lg:text-7xl text-dark font-extrabold leading-tight">It's good <br>
+              tea time at The <br>Tea House</h1>
+            <p class="py-6 text-lg text-lightdark font-medium">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds..</p>
+            <button class="btn btn-primary ">Explore More</button>
+          </div>
+          <div>
+            <div>  <img src="./images/banner.png" class=" md:w-3/4 " /></div>
+            <div class="flex items-center gap-4 drop-shadow-lg rounded-lg bg-white p-5 w-48 lg:w-60  -mt-20 ml-16 md:ml-20 lg:ml-8">
+              <i class="fa-solid fa-star text-[#FFC850] text-3xl"></i>
+              <div>
+                <h4 class="text-dark font-extrabold text-2xl">5.00</h4>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--bannar part end-->
+  </header>
+  <main></main>
+  <footer></footer>
+</body>
+
+</html>
